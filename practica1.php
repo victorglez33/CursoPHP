@@ -13,6 +13,8 @@ print('Hello ');
 echo "World \n";
 
 
+//VARIABLES
+
 $boolean = true; // variable que recibe true or false
 $boolean = false;
 
@@ -46,10 +48,51 @@ var_dump($div);
 
 
 $num = 0;
+$num +=1; // $num = 
+echo $num++;
+echo ++$num;
+$num -=2;
+$num /=$float;
 
 
 
 
+//STRINGS
+
+$num = 5;
+$varString = '$num';
+echo $varString;
+$varString = "El valor de la variuable num $num";
+echo $varString;
+$otroString = "Otra forma de incluir variables {$num}";
+echo $varString;
+$otroString2 = "Otra 2 forma de incluir variables $${num}";
+echo $otroString2;
+
+//-.,{ñ´p´p'
+
+
+
+$stringMult = <<<'END'
+Multi line
+string
+END;
+
+echo $stringMult;
+echo 'Este es un '.'String'; 
+echo 'multiples', 'parametros', 'en echo';
+
+
+
+//CONSTANTES
+
+define("FOO", "algo");
+echo FOO;
+
+echo "Este es el valor de la constante FOO = ".FOO;
+
+
+define("_FOO", 56);
 
 
 
